@@ -1,0 +1,45 @@
+---
+title: "analysis.rmd"
+author: "Amanda Walker"
+date: "Thursday, May 28, 2015"
+output: html_document
+---
+#Data analyses and figure creation for Posture and Gravitational Frame experiment
+
+###Amanda Walker and Krista Strother
+
+###Eastern Oregon University, Spring 2015
+
+##Introduction
+
+This is the analyses of raw data collected from [The Effects of Posture on Visualization: A Test of Gravitational Frame of Reference](https://www.youtube.com/watch?v=i9-Vqo_O--o). This is a link directly to the consent form which was recorded on YouTube.  All other materials including the links to assigned conditions and the debriefing are embedded in the previous link.
+
+This data set contains observations from 38 participants.  One participant reported no response to the prompt question, therefore that individual was excluded from this data set.
+
+Although this data set contains three variables (condition, birth month, and side), only the variables condition and side were of interest.  These data were analyzed and displayed in a presentation and on a poster.
+
+##Data Preparation
+
+```{r, echo=FALSE}
+
+dataSet<-read.csv("Raw Data GFR.csv")
+
+```
+
+Observations
+
+```{r, echo=FALSE}
+
+summary(dataSet)
+
+```
+Table (Condition and Result)
+```{r}
+
+mytable<-table(dataSet$Condition,dataSet$Side)
+
+mytable
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the figures and analyses.
