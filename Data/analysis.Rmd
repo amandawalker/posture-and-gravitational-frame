@@ -1,5 +1,5 @@
 ---
-title: "analysis.rmd"
+title: "analysis.Rmd"
 author: "Amanda Walker"
 date: "Thursday, May 28, 2015"
 output: html_document
@@ -41,5 +41,25 @@ mytable<-table(dataSet$Condition,dataSet$Side)
 mytable
 
 ```
+##Analysis 
+
+(Chi-Square Test)
+
+```{r}
+
+chisq.test(dataSet$Condition,dataSet$Side)
+
+```
+
+##Results
+
+This test shows no relationship between condition and side, chi squared(1) = 0, p = 1.
+
+This analysis indicates that the side on which a person lies does not influence a visualization task.  Therefore a gravitational frame of reference was not supported in this study.
+
+##Summary
+
+Although some studies indicate posture has effects on various functions (hormonal, biochemical), posture in this study did not seem to affect visualization.  Future research possibilities would include a control for handedness in the sample, visual prompts before the visualization task, and counterbalance for the delivery of response options (Was the ball passed to the left or to the right? versus Was the ball passed to the right or to the left?)
+
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the figures and analyses.

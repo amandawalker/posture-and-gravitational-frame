@@ -100,6 +100,25 @@ mytable</code></pre>
 ##     Left Right
 ##   A    6    13
 ##   B    7    12</code></pre>
+</div>
+<div id="analysis" class="section level2">
+<h2>Analysis</h2>
+<p>(Chi-Square Test)</p>
+<pre class="r"><code>chisq.test(dataSet$Condition,dataSet$Side)</code></pre>
+<pre><code>## 
+##  Pearson's Chi-squared test with Yates' continuity correction
+## 
+## data:  dataSet$Condition and dataSet$Side
+## X-squared = 0, df = 1, p-value = 1</code></pre>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p>This test shows no relationship between condition and side, chi squared(1) = 0, p = 1.</p>
+<p>This analysis indicates that the side on which a person lies does not influence a visualization task. Therefore a gravitational frame of reference was not supported in this study.</p>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>Although some studies indicate posture has effects on various functions (hormonal, biochemical), posture in this study did not seem to affect visualization. Future research possibilities would include a control for handedness in the sample, visual prompts before the visualization task, and counterbalance for the delivery of response options (Was the ball passed to the left or to the right? versus Was the ball passed to the right or to the left?)</p>
 <p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the figures and analyses.</p>
 </div>
 </div>
