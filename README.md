@@ -4,9 +4,9 @@ author: "Amanda Walker"
 date: "Saturday, May 30, 2015"
 output: html_document
 ---
-#Experiment on Gravitational Frame of Reference
+#Posture and Gravitational Frame
 
-###Krista Strother & Partner
+###Amanda Walker & Partner
 
 ##Introduction
 
